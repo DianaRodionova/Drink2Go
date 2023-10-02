@@ -1,0 +1,71 @@
+.site-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+
+  a {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+
+    display: block;
+
+    padding: 22px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $mine-shaft;
+    background-color: $white;
+
+    @media (min-width: $tablet-width) {
+      padding: 32px 20px;
+    }
+  }
+
+  a[href] {
+    &:hover, &:focus {
+      color: $blue-marguerite;
+    }
+
+    &:active {
+      background-color: $blue-chalk;
+    }
+  }
+
+  &__item {
+    border-top: 1px solid $blue-chalk;
+
+    &:last-child {
+      border-bottom: 1px solid $blue-chalk;
+    }
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &--current {
+      @media (min-width: $tablet-width) {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          height: 2px;
+          background: $blue-marguerite;
+        }
+      }
+    }
+  }
+}
+

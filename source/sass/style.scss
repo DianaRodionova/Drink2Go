@@ -1,0 +1,18 @@
+// Global
+
+@import "./global/variables.scss";
+@import "./global/global.scss";
+@import "./global/fonts.scss";
+
+// Blocks
+
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
+@import "blocks/swiper.scss";
+@import "blocks/new-product.scss";
+
+// @import "blocks/new-products.scss";
+// @import "blocks/new-products.scss";
+// @import "blocks/new-products.scss";

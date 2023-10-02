@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Drink2GO - интернет-магазин кофейных напитков</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin=""/>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="32" height="36" alt="Логотип «Drink2GO»">
+          </picture>
+        </a>
+
+        <span class="page-header__text">Интернет-магазин<br>кофейных напитков</span>
+      </div>
+
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link">
+              Главная
+            </a>
+          </li>
+
+          <li class="site-list__item">
+            <a class="site-list__link" href="">
+              Каталог
+            </a>
+          </li>
+
+          <li class="site-list__item">
+            <a class="site-list__link" href="">
+              Доставка
+            </a>
+          </li>
+
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/">
+              О нас
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="user-list user-list--nojs">
+        <li class="user-list__item">
+          <a class="user-list__link" href="">
+            <svg class="user-list__link-icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+
+            <span class="user-list__text">Войти</span>
+          </a>
+        </li>
+
+        <li class="user-list__item">
+          <a class="user-list__link" href="">
+            <svg class="user-list__link-icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#cart"></use>
+            </svg>
+
+            <span class="user-list__text">Корзина</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink2Go.</h1>
+
+      <section class="swiper">
+        <h2 class="visually-hidden">Новинки</h2>
+
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide swiper-slide--merino">
+            <div class="new-product">
+              <picture class="new-product__picture">
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/slide-1-desktop.webp 1x, img/slider/slide-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/slide-1-tablet.webp 1x, img/slider/slide-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/slider/slide-1-mobile.webp 1x, img/slider/slide-1-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/slider/slide-1-desktop.png, img/slider/slide-1-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/slider/slide-1-tablet.png, img/slider/slide-1-tablet@2x.png 2x">
+                <img class="new-product__image" src="img/slider/slide-1-mobile.png" srcset="img/slider/slide-1-mobile@2x.png 2x" alt="Банка кофе Декаф Флэт Уайт" width="280" height="280">
+              </picture>
+
+              <div class="new-product__info">
+                <span class="new-product__badge">Новинка!</span>
+
+                <h2 class="new-product__title">Декаф Флэт Уайт</h2>
+
+                <p class="new-product__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+
+                <div class="new-product__wrapper">
+                  <p class="new-product__price-old">295<span>&#8381;</span></p>
+
+                  <p class="new-product__price">
+                    225<span>&#8381;</span>
+                  </p>
+
+                  <a class="new-product__button" href="#">Заказать</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide--selago">
+            <div class="new-product">
+              <picture class="new-product__picture">
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/slide-2-desktop.webp 1x, img/slider/slide-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/slide-2-tablet.webp 1x, img/slider/slide-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/slider/slide-2-mobile.webp 1x, img/slider/slide-2-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/slider/slide-2-desktop.png, img/slider/slide-2-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/slider/slide-2-tablet.png, img/slider/slide-2-tablet@2x.png 2x">
+                <img class="new-product__image" src="img/slider/slide-2-mobile.png" srcset="img/slider/slide-2-mobile@2x.png 2x" alt="Банка кофе Лавандовый Латте" width="280" height="280">
+              </picture>
+
+              <div class="new-product__info">
+                <span class="new-product__badge">Новинка!</span>
+
+                <h2 class="new-product__title">Лавандовый Латте</h2>
+
+                <p class="new-product__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+
+                <div class="new-product__wrapper">
+                  <p class="new-product__price-old">285<span>&#8381;</span></p>
+
+                  <p class="new-product__price">
+                    265<span>&#8381;</span>
+                  </p>
+
+                  <a class="new-product__button" href="#">Заказать</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide--iron">
+            <div class="new-product">
+              <picture class="new-product__picture">
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/slider/slide-3-desktop.webp 1x, img/slider/slide-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/slider/slide-3-tablet.webp 1x, img/slider/slide-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/slider/slide-3-mobile.webp 1x, img/slider/slide-3-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/slider/slide-3-desktop.png, img/slider/slide-3-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/slider/slide-3-tablet.png, img/slider/slide-3-tablet@2x.png 2x">
+                <img class="new-product__image" src="img/slider/slide-3-mobile.png" srcset="img/slider/slide-3-mobile@2x.png 2x" alt="Банка кофе Тройной Эспрессо" width="280" height="280">
+              </picture>
+
+              <div class="new-product__info">
+                <span class="new-product__badge">Новинка!</span>
+
+                <h2 class="new-product__title">Тройной Эспрессо</h2>
+
+                <p class="new-product__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+
+                <div class="new-product__wrapper">
+                  <p class="new-product__price-old">395<span>&#8381;</span></p>
+
+                  <p class="new-product__price">
+                    375<span>&#8381;</span>
+                  </p>
+
+                  <a class="new-product__button" href="#">Заказать</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <button class="swiper-button swiper-button-next" type="button" aria-label="Следующий слайд">
+          <svg class="swiper-button__icon" width="11" height="20">
+            <use xlink:href="img/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+
+        <button class="swiper-button swiper-button-prev" type="button" aria-label="Предыдущий слайд">
+          <svg class="swiper-button__icon" width="11" height="20">
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </button>
+
+
+        <div class="swiper-pagination"></div>
+      </section>
+    </main>
+
+    <footer class="page-footer"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
