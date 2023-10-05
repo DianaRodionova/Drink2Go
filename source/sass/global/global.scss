@@ -114,6 +114,23 @@ button {
   background: transparent;
 }
 
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+legend {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  white-space: normal;
+  color: inherit;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

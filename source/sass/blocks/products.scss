@@ -1,0 +1,154 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+  }
+
+  &__list {
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+
+      margin-bottom: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(3, 1fr);
+
+      margin-bottom: 60px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 20px 20px;
+
+    border-radius: 4px;
+    background-color: $white;
+
+    @media (min-width: $tablet-width) {
+      padding: 50px 30px 30px;
+    }
+
+    &:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__link-image {
+    align-self: center;
+    display: block;
+
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__image {
+    width: 130px;
+    height: 180px;
+  }
+
+  &__link-title {
+    display: block;
+
+    margin-bottom: 4px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: $font-weight-bold;
+
+    color: $mine-shaft;
+
+    text-align: left;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 16px;
+
+    text-align: left;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: $font-weight-semibold;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+
+    padding: 8px 20px;
+
+    color: $white;
+    border-radius: 4px;
+    background-color: $blue-marguerite;
+
+    &:hover,
+    &:focus {
+      background-color: $portage;
+    }
+
+    &:active {
+      background-color: $royal-purple;
+    }
+
+    &:disabled {
+      background-color: $silver;
+    }
+
+    &-icon {
+      margin-right: 6px;
+
+      color: $white;
+    }
+  }
+
+  &__pagination {
+    @media (min-width: $tablet-width) {
+      align-self: flex-end;
+    }
+  }
+}

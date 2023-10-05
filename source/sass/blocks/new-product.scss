@@ -6,9 +6,7 @@
   padding: 20px 20px 60px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
     padding: 60px 80px 0;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,6 +15,7 @@
 
     width: $desktop-width;
     padding: 30px 80px 84px;
+    margin: 0 auto;
   }
 
   &__image {
@@ -64,15 +63,7 @@
   }
 
   &__badge {
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: $font-weight-bold;
-
-    margin-bottom: 4px;
-
-    text-transform: uppercase;
-
-    color: $blue-marguerite;
+    @include badge;
   }
 
   &__title {

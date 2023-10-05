@@ -7,15 +7,17 @@
 
   &__toggle {
     position: absolute;
+    z-index: 2;
     top: 0;
     right: 0;
-    z-index: 2;
+
     display: block;
     width: 60px;
     height: 60px;
-    background-color: transparent;
+
     cursor: pointer;
     border: none;
+    background-color: transparent;
 
     &:active {
       background-color: $blue-chalk;
@@ -37,8 +39,10 @@
     position: absolute;
     top: 24px;
     left: 22px;
+
     width: 16px;
     height: 2px;
+
     background-color: $mine-shaft;
     box-shadow: 0 5px 0 0 $mine-shaft, 0 10px 0 0 $mine-shaft;
 
@@ -84,11 +88,13 @@
 
   &--opened .site-list {
     @media (max-width: $mobile-width-only) {
-      z-index: 1;
+      z-index: 1000;
 
       position: absolute;
       top: 60px;
       left: 0;
+
+      display: block;
 
       width: 100%;
     }

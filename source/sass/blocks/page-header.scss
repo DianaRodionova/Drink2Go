@@ -9,14 +9,13 @@
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
 
-    width: $tablet-width;
     padding: 0 20px;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     padding: 0 40px;
+    margin: 0 auto;
   }
 
   &__wrapper {

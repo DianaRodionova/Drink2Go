@@ -1,0 +1,84 @@
+.catalog {
+  background-color: $alabaster;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px 20px 44px;
+
+    @media (min-width: $tablet-width) {
+      padding: 80px 20px 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 318px 1fr;
+      column-gap: 30px;
+
+      align-items: flex-start;
+
+      width: $desktop-width;
+      padding: 100px 40px 120px;
+      margin: 0 auto;
+    }
+  }
+
+  &__badge {
+    @include badge;
+
+    text-align: center;
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__heading {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: $font-weight-bold;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 42px;
+      line-height: 64px;
+
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / -1;
+
+      margin-bottom: 36px;
+    }
+  }
+
+  &__form {
+    @media (min-width: $desktop-width) {
+      grid-row: 3 / 5;
+    }
+  }
+
+  &__filters {
+    margin-bottom: 36px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__sorting {
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      align-self: flex-end;
+
+      margin-bottom: 26px;
+    }
+  }
+}

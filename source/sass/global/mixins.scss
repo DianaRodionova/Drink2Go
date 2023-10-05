@@ -1,0 +1,11 @@
+@mixin badge {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: $font-weight-bold;
+
+  margin-bottom: 4px;
+
+  text-transform: uppercase;
+
+  color: $blue-marguerite;
+}
