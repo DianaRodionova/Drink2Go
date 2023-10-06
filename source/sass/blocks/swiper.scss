@@ -5,7 +5,7 @@
     background-color: $merino;
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient(to bottom, $merino 73%,#fff 27%);
+      background-image: linear-gradient(to bottom, $merino 73%, $white 27%);
     }
 
     @media (min-width: $desktop-width) {
@@ -17,7 +17,7 @@
     background-color: $selago;
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient(to bottom, $selago 73%,#fff 27%);
+      background-image: linear-gradient(to bottom, $selago 73%, $white 27%);
     }
 
     @media (min-width: $desktop-width) {
@@ -29,7 +29,7 @@
     background-color: $iron;
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient(to bottom, $iron 73%,#fff 27%);
+      background-image: linear-gradient(to bottom, $iron 73%, $white 27%);
     }
 
     @media (min-width: $desktop-width) {
@@ -65,8 +65,7 @@
   }
 
   &__icon {
-    fill: $blue-marguerite;
-    color:  $blue-marguerite;
+    color: $blue-marguerite;
   }
 
   &:disabled {
@@ -81,7 +80,8 @@
 .swiper-button-next {
   right: 0;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     outline: none;
     background-image: linear-gradient(-90deg, $white 0%, rgba($white, 0) 100%);
     background-repeat: no-repeat;
@@ -99,7 +99,8 @@
 
   background-color: transparent;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     outline: none;
     background-image: linear-gradient(90deg, $white 0%, rgba($white, 0) 100%);
     background-repeat: no-repeat;
@@ -112,7 +113,7 @@
   }
 }
 
-.swiper-horizontal>.swiper-pagination-bullets {
+.swiper-horizontal > .swiper-pagination-bullets {
   bottom: 60px;
 }
 
@@ -150,5 +151,3 @@
 .swiper-pagination-bullet-active {
   background-color: $blue-marguerite;
 }
-
-

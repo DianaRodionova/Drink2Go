@@ -2,24 +2,19 @@
  * Colors
  * Название переменной конкретного цвета генерируется на http://chir.ag/projects/name-that-color/
  */
-$white: #FFFFFF;
+$white: #ffffff;
 $mine-shaft: #333333;
-$blue-marguerite: #7859CF;
-$blue-chalk: #F0EBFF;
-$merino: #F3EBE1;
-$portage: #9070EC;
-$royal-purple: #593CAC;
-$silver: #BDBDBD;
-$selago: #EAE6FC;
-$iron: #E5E6E8;
-$alabaster: #F8F8F8;
-$mercury: #E2E2E2;
-$perfume: #D4C5FC;
-
-// $perfume: #D4C5FC;
-// $blue-charcoal: #010E23;
-
-
+$blue-marguerite: #7859cf;
+$blue-chalk: #f0ebff;
+$merino: #f3ebe1;
+$portage: #9070ec;
+$royal-purple: #593cac;
+$silver: #bdbdbd;
+$selago: #eae6fc;
+$iron: #e5e6e8;
+$alabaster: #f8f8f8;
+$mercury: #e2e2e2;
+$perfume: #d4c5fc;
 
 /**
  * Viewports
@@ -32,8 +27,8 @@ $mobile-width-only: 767px;
  * Fonts
  */
 $font-family-default:
-'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
-$font-family-custom: 'Montserrat';
+"Roboto", "Helvetica Neue", "Arial", sans-serif;
+$font-family-custom: "Montserrat";
 $font-family: $font-family-custom, $font-family-default;
 
 $font-weight-regular: 400;
@@ -41,129 +36,16 @@ $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
 
-// //<--- deprecated
-// $font-size-giant: rem(26px);
-// $font-size-huge: rem(20px);
-// $font-size-large: rem(18px);
-// $font-size-big: rem(16px);
-// $font-size-medium: rem(14px);
-// $font-size-small: rem(12px);
-// $font-size-tiny: rem(10px);
-// $font-size-extra-tiny: rem(8px);
-
-// $line-height-giant: line-height(rem(35px), $font-size-giant);
-// $line-height-huge: line-height(rem(27px), $font-size-huge);
-// $line-height-large: line-height(rem(25px), $font-size-large);
-// $line-height-big: line-height(rem(22px), $font-size-big);
-// $line-height-medium: line-height(rem(19px), $font-size-medium);
-// $line-height-small: line-height(rem(16px), $font-size-small);
-// $line-height-tiny: line-height(rem(14px), $font-size-tiny);
-// $line-height-extra-tiny: line-height(rem(11px), $font-size-extra-tiny);
-// //deprecated --->
-
-// $font-size-h0: rem(28);
-// $font-size-h1: rem(22);
-// $font-size-h2: rem(18);
-// $font-size-h3: rem(14);
-// $font-size-p1: rem(14);
-// $font-size-p2: rem(14);
-// $font-size-p3: rem(12);
-// $font-size-p4: rem(10);
-// $font-size-sm: rem(8);
-
-// $line-height-h0: line-height(rem(38), $font-size-h0);
-// $line-height-h1: line-height(rem(30), $font-size-h1);
-// $line-height-h2: line-height(rem(25), $font-size-h2);
-// $line-height-h3: line-height(rem(19), $font-size-h3);
-// $line-height-p1: line-height(rem(20), $font-size-p1);
-// $line-height-p2: line-height(rem(16), $font-size-p2);
-// $line-height-p3: line-height(rem(16), $font-size-p3);
-// $line-height-p4: line-height(rem(14), $font-size-p4);
-// $line-height-sm: line-height(rem(11), $font-size-sm);
-
-/**
- * Spacing
- */
- $spacing-immense: 60px;
-// $spacing-immense: rem(48px);
-$spacing-giant: 32px;
-// $spacing-huge: rem(24px);
-$spacing-extra-large: 20px;
-// $spacing-large: rem(16px);
-// $spacing-big: rem(12px);
-$spacing-extra-medium: 10px;
-$spacing-medium: 8px;
-// $spacing-small: rem(6px);
-$spacing-tiny: 4px;
-// $spacing-extra-tiny: rem(2px);
-
-// $layout-gap: $spacing-extra-large;
 
 /**
  * Layout
  */
 $page-min-width: 320px;
 
-// $header-height: var(--header-height);
-// $header-editor-height: rem(52px);
-// $header-divider-height: rem(24px);
-
-
-/**
- * Z-index
- */
-// $z-index-select: 1050;
-// $z-index-tooltip: 1001;
-// $z-index-snackbar: 1001;
-// $z-index-popup: 1000;
-// $z-index-article-search-popup: 998;
-// $z-index-overlay: 999;
-// $z-index-header: 999;
-// $z-index-dropdown: 500;
-// $z-index-uploader: 499;
-// $z-index-resizer: 498;
-// $z-index-push-notifications: 200;
-// $z-index-scroll-top: 100;
-// $z-index-header-dropdown: 10;
-
-/**
- * Transitions and Animations
- */
-// $transition-duration-very-fast: 100ms;
-// $transition-duration-fast: 200ms;
-// $transition-duration-normal: 300ms;
-// $transition-duration-slow: 400ms;
-// $transition-duration-very-slow: 500ms;
-
-// $transition-duration-hover: $transition-duration-very-fast;
-// $transition-function-hover: ease-in-out;
 
 /**
  * Miscellaneous
  */
-// $border-radius-giant: rem(16px);
-// $border-radius-huge: rem(12px);
-// $border-radius-big: rem(8px);
-// $border-radius-medium: rem(6px);
 $border-radius: 4px;
-// $border-radius-small: rem(2px);
 
-// $box-shadow: 0 rem(4px) rem(16px) rgba(0, 0, 0, 0.06);
-// $box-shadow-header: 0 rem(3px) rem(10px) rgba(0, 0, 0, 0.05);
-// $box-shadow-popup: 0 rem(12px) rem(40px) rgba(0, 0, 0, 0.08),
-//   0 rem(3px) rem(8px) rgba(40, 40, 40, 0.03);
-// $box-shadow-popup-secondary: 0 rem(12px) rem(40px) rgba(0, 0, 0, 0.03),
-//   0 rem(3px) rem(8px) rgba(40, 40, 40, 0.03),
-//   0 rem(12px) rem(40px) rgba(0, 0, 0, 0.03),
-//   0 rem(3px) rem(8px) rgba(40, 40, 40, 0.03);
-// $box-shadow-segment: 0 rem(-3px) rem(15px) rgba(0, 0, 0, 0.06),
-//   0 rem(7px) rem(22px) rgba(0, 0, 0, 0.1);
-// $box-shadow-feedback: 0 rem(2px) rem(20px) rgba(0, 0, 0, 0.15);
-// $box-shadow-drag-fallback: 0 rem(12px) rem(40px) rgba(0, 0, 0, 0.08),
-//   0 rem(3px) rem(8px) rgba(40, 40, 40, 0.03);
-// $box-shadow-switcher: 0 rem(5px) rem(5px) rgba(0, 0, 0, 0.25);
-// $box-shadow-chat: 0 rem(2px) rem(16px) rgba(0, 0, 0, 0.1);
-// $box-shadow-palette-item: 0 rem(4px) rem(4px) rgba(0, 0, 0, 0.19);
-// $box-shadow-select: 0 rem(8px) rem(8px) rgba(19, 39, 71, 0.08);
-// $box-shadow-graph-tooltip: 0 rem(12px) rem(40px) rgba(0, 0, 0, 0.03),
-//   0 rem(3px) rem(8px) rgba(40, 40, 40, 0.03);
+$box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);

@@ -1,11 +1,68 @@
+@mixin h1 {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: $font-weight-bold;
+
+  letter-spacing: 0.02em;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 80px;
+  }
+}
+
+@mixin h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: $font-weight-bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
+
+@mixin h3 {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: $font-weight-bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@mixin h4 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: $font-weight-bold;
+
+  color: $blue-marguerite;
+}
+
 @mixin badge {
   font-size: 12px;
   line-height: 16px;
   font-weight: $font-weight-bold;
 
-  margin-bottom: 4px;
-
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 
   color: $blue-marguerite;
+}
+
+@mixin text-big {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+@mixin text-medium {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin text-small {
+  font-size: 12px;
+  line-height: 16px;
 }

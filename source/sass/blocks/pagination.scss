@@ -12,8 +12,7 @@
   }
 
   &__link {
-    font-size: 16px;
-    line-height: 24px;
+    @include text-medium;
 
     display: flex;
     align-items: center;
@@ -23,7 +22,7 @@
     height: 40px;
 
     color: $blue-marguerite;
-    border-radius: 4px;
+    border-radius: $border-radius;
     background-color: $white;
 
     @media (min-width: $tablet-width) {
@@ -40,7 +39,7 @@
       color: $white;
       background-color: $portage;
 
-     + .pagination__icon {
+      + .pagination__icon {
         fill: $white;
       }
     }

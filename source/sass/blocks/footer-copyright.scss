@@ -1,0 +1,49 @@
+.footer-copyright {
+  @include text-small;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  color: $silver;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/ -1;
+
+    padding: 0;
+  }
+
+  &__link {
+    margin-left: 3px;
+
+    color: $silver;
+
+    &:hover,
+    &:focus {
+      color: $blue-marguerite;
+
+      .footer-copyright__icon {
+        fill: $blue-marguerite;
+      }
+    }
+
+    &:active {
+      color: $royal-purple;
+
+      .footer-copyright__icon {
+        fill: $royal-purple;
+      }
+    }
+  }
+
+  &__icon {
+    width: 12px;
+    height: 16px;
+
+    margin-left: 4px;
+
+    fill: $silver;
+  }
+}

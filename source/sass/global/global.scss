@@ -20,7 +20,16 @@ body {
 }
 
 body {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  position: relative;
   flex-grow: 1;
+
+  min-height: 100%;
+  min-width: $page-min-width;
+  margin: 0;
 }
 
 html {
@@ -32,18 +41,6 @@ html {
 
   color: $mine-shaft;
   background-color: $white;
-}
-
-body {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-
-  position: relative;
-
-  min-height: 100%;
-  min-width: $page-min-width;
-  margin: 0;
 }
 
 h1,
@@ -92,8 +89,7 @@ svg {
 
 a,
 button,
-input,
-textarea {
+input {
   &:focus {
     outline: 0;
   }
@@ -104,7 +100,6 @@ a {
 }
 
 input,
-textarea,
 button {
   padding: 0;
 

@@ -58,10 +58,9 @@
   &__text {
     display: none;
 
-    font-size: 12px;
-    line-height: 16px;
-
     @media (min-width: $desktop-width) {
+      @include text-small;
+
       display: block;
 
       margin-left: 20px;

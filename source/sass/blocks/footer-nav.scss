@@ -1,0 +1,55 @@
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+
+  border-bottom: 1px solid $blue-chalk;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    border-bottom: none;
+  }
+
+  &__heading {
+    @include h4;
+
+    margin-bottom: 12px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__link {
+    @include text-small;
+
+    font-weight: $font-weight-medium;
+
+    display: block;
+
+    padding: 8px 0;
+
+    text-transform: uppercase;
+
+    color: $mine-shaft;
+
+    &:hover,
+    &:focus {
+      color: $portage;
+    }
+
+    &:active {
+      color: $royal-purple;
+    }
+  }
+}

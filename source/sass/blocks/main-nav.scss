@@ -105,11 +105,13 @@
   }
 
   &--nojs .site-list {
-    position: static;
+    @media (max-width: $mobile-width-only) {
+      position: static;
 
-    display: block;
+      display: block;
 
-    min-height: 0;
-    width: 100%;
+      min-height: 0;
+      width: 100%;
+    }
   }
 }

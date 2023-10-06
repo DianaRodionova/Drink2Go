@@ -93,9 +93,9 @@
     align-items: center;
 
     &-control {
+      @include text-medium;
+
       font-family: $font-family;
-      font-size: 16px;
-      line-height: 24px;
       font-weight: $font-weight-medium;
 
       width: 118px;
@@ -105,7 +105,7 @@
 
       color: $mine-shaft;
       border: 2px solid $portage;
-      border-radius: 4px;
+      border-radius: $border-radius;
 
       @media (min-width: $tablet-width) {
         width: 87px;

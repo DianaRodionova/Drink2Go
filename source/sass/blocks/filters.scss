@@ -27,9 +27,9 @@
   }
 
   &__legend {
+    @include text-medium;
+
     font-family: $font-family;
-    font-size: 16px;
-    line-height: 24px;
     font-weight: $font-weight-semibold;
 
     margin-bottom: 20px;
@@ -48,8 +48,7 @@
   }
 
   &__label {
-    font-size: 16px;
-    line-height: 24px;
+    @include text-medium;
 
     position: relative;
 
@@ -197,9 +196,9 @@
   }
 
   &__action {
+    @include text-medium;
+
     font-family: $font-family;
-    font-size: 16px;
-    line-height: 24px;
 
     display: flex;
     justify-content: center;
@@ -208,7 +207,7 @@
     padding: 8px;
 
     color: $white;
-    border-radius: 4px;
+    border-radius: $border-radius;
     background-color: $blue-marguerite;
 
     @media (min-width: $tablet-width) {
@@ -231,7 +230,6 @@
       @media (min-width: $desktop-width) {
         margin-right: 0;
       }
-
     }
 
     &:hover,

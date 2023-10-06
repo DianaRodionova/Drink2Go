@@ -21,20 +21,35 @@
     margin-left: 40px;
   }
 
-  a {
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 500;
+  &__item {
+    @media (min-width: $desktop-width) {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__link {
+    @include text-small;
+
+    font-weight: $font-weight-medium;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
 
     text-align: center;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
 
     color: $mine-shaft;
     background-color: $white;
-  }
 
-  a[href] {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $blue-marguerite;
     }
 
@@ -43,24 +58,19 @@
     }
 
     &:hover .user-list__link-icon,
-    &:focus .user-list__link-icon{
+    &:focus .user-list__link-icon {
       fill: $blue-marguerite;
     }
-  }
-
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 60px;
-    height: 60px;
 
     @media (min-width: $tablet-width) {
       width: auto;
       height: auto;
 
       padding: 32px 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 32px 20px;
     }
 
     &-icon {

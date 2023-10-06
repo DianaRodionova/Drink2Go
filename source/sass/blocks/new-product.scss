@@ -14,7 +14,7 @@
     justify-content: space-between;
 
     width: $desktop-width;
-    padding: 30px 80px 84px;
+    padding: 30px 80px 84px 105px;
     margin: 0 auto;
   }
 
@@ -64,19 +64,16 @@
 
   &__badge {
     @include badge;
+
+    margin-bottom: 4px;
   }
 
   &__title {
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: $font-weight-bold;
+    @include h1;
 
     margin-bottom: 10px;
 
     @media (min-width: $tablet-width) {
-      font-size: 56px;
-      line-height: 80px;
-
       margin-bottom: 16px;
     }
   }
@@ -85,8 +82,7 @@
     margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 32px;
+      @include text-big;
     }
 
     @media (min-width: $desktop-width) {
@@ -102,8 +98,8 @@
 
 
   &__price {
-    font-size: 20px;
-    line-height: 32px;
+    @include text-big;
+
     font-weight: $font-weight-semibold;
 
     margin-right: 20px;
@@ -122,8 +118,7 @@
   }
 
   &__button {
-    font-size: 16px;
-    line-height: 24px;
+    @include text-medium;
 
     display: flex;
     justify-content: center;

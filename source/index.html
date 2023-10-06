@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Drink2GO - интернет-магазин кофейных напитков</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/180.png">
-    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" type="font/woff2" crossorigin="">
@@ -34,25 +34,25 @@
 
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a class="site-list__link">
+            <a class="site-list__link site-list__link--current">
               Главная
             </a>
           </li>
 
           <li class="site-list__item">
-            <a class="site-list__link" href="">
+            <a class="site-list__link" href="#!">
               Каталог
             </a>
           </li>
 
           <li class="site-list__item">
-            <a class="site-list__link" href="">
+            <a class="site-list__link" href="#!">
               Доставка
             </a>
           </li>
 
           <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/">
+            <a class="site-list__link" href="#!">
               О нас
             </a>
           </li>
@@ -61,7 +61,7 @@
 
       <ul class="user-list user-list--nojs">
         <li class="user-list__item">
-          <a class="user-list__link" href="">
+          <a class="user-list__link" href="#!">
             <svg class="user-list__link-icon" width="16" height="16">
               <use xlink:href="img/sprite.svg#user"></use>
             </svg>
@@ -71,7 +71,7 @@
         </li>
 
         <li class="user-list__item">
-          <a class="user-list__link" href="">
+          <a class="user-list__link" href="#!">
             <svg class="user-list__link-icon" width="16" height="16">
               <use xlink:href="img/sprite.svg#cart"></use>
             </svg>
@@ -103,7 +103,7 @@
               <div class="new-product__info">
                 <span class="new-product__badge">Новинка!</span>
 
-                <h2 class="new-product__title">Декаф Флэт Уайт</h2>
+                <h1 class="new-product__title">Декаф Флэт Уайт</h1>
 
                 <p class="new-product__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
 
@@ -114,7 +114,7 @@
                     225<span>&#8381;</span>
                   </p>
 
-                  <a class="new-product__button" href="#">Заказать</a>
+                  <a class="new-product__button" href="#!">Заказать</a>
                 </div>
               </div>
             </article>
@@ -133,7 +133,7 @@
               <div class="new-product__info">
                 <span class="new-product__badge">Новинка!</span>
 
-                <h2 class="new-product__title">Лавандовый Латте</h2>
+                <h1 class="new-product__title">Лавандовый Латте</h1>
 
                 <p class="new-product__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
 
@@ -144,7 +144,7 @@
                     265<span>&#8381;</span>
                   </p>
 
-                  <a class="new-product__button" href="#">Заказать</a>
+                  <a class="new-product__button" href="#!">Заказать</a>
                 </div>
               </div>
             </article>
@@ -163,7 +163,7 @@
               <div class="new-product__info">
                 <span class="new-product__badge">Новинка!</span>
 
-                <h2 class="new-product__title">Тройной Эспрессо</h2>
+                <h1 class="new-product__title">Тройной Эспрессо</h1>
 
                 <p class="new-product__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
 
@@ -174,7 +174,7 @@
                     375<span>&#8381;</span>
                   </p>
 
-                  <a class="new-product__button" href="#">Заказать</a>
+                  <a class="new-product__button" href="#!">Заказать</a>
                 </div>
               </div>
             </article>
@@ -222,7 +222,7 @@
             <div class="features__text">
               <h3 class="features__title">Удобство</h3>
 
-              <p class="features__description">Легко помещается и в карман, и в маленькую сумочку</p>
+              <p class="features__description">Легко помещается и в карман,&nbsp;и в маленькую сумочку</p>
             </div>
           </li>
 
@@ -246,7 +246,7 @@
             <div class="features__text">
               <h3 class="features__title">Экологичность</h3>
 
-              <p class="features__description">Вся упаковка сделана из перерабатываемых материалов</p>
+              <p class="features__description">Вся упаковка сделана&nbsp;из перерабатываемых материалов</p>
             </div>
           </li>
         </ul>
@@ -356,16 +356,16 @@
               <div class="sorting__title" data-default="по умолчанию">по умолчанию</div>
 
               <div class="sorting__content">
-                <input id="select0" class="sorting__input" type="radio" name="select" checked/>
+                <input id="select0" class="sorting__input" type="radio" name="select" checked>
                 <label for="select0" class="sorting__label">по умолчанию</label>
 
-                <input id="select1" class="sorting__input" type="radio" name="select" />
+                <input id="select1" class="sorting__input" type="radio" name="select">
                 <label for="select1" class="sorting__label">сначала дорогие</label>
 
-                <input id="select2" class="sorting__input" type="radio" name="select" />
+                <input id="select2" class="sorting__input" type="radio" name="select">
                 <label for="select2" class="sorting__label">сначала дешёвые</label>
 
-                <input id="select3" class="sorting__input" type="radio" name="select" />
+                <input id="select3" class="sorting__input" type="radio" name="select">
                 <label for="select3" class="sorting__label">высокий рейтинг</label>
               </div>
             </div>
@@ -375,14 +375,14 @@
             <ul class="products__list">
               <li class="products__item">
                 <article class="products__card">
-                  <a class="products__link-image" href="#">
+                  <a class="products__link-image" href="#!">
                     <picture>
-                      <source type="image/webp" srcset="img/coffee-can-1.webp 1x, img/coffee-can-1@2x.webp 2x">
-                      <img class="products__image" src="coffee-can-1.png" srcset="img/coffee-can-1@2x.png 2x" alt="Банка кофе Декаф Флэт Уайт" width="130" height="188">
+                      <source type="image/webp" srcset="img/catalog/coffee-can-1.webp 1x, img/catalog/coffee-can-1@2x.webp 2x">
+                      <img class="products__image" src="img/catalog/coffee-can-1.png" srcset="img/catalog/coffee-can-1@2x.png 2x" alt="Банка кофе Декаф Флэт Уайт" width="130" height="188">
                     </picture>
                   </a>
 
-                  <a class="products__link-title" href="#">
+                  <a class="products__link-title" href="#!">
                     <h3 class="products__title">Декаф Флэт Уайт</h3>
                   </a>
 
@@ -404,14 +404,14 @@
 
               <li class="products__item">
                 <article class="products__card">
-                  <a class="products__link-image" href="#">
+                  <a class="products__link-image" href="#!">
                     <picture>
-                      <source type="image/webp" srcset="img/coffee-can-2.webp 1x, img/coffee-can-2@2x.webp 2x">
-                      <img class="products__image" src="coffee-can-2.png" srcset="img/coffee-can-2@2x.png 2x" alt="Банка кофе сиреневого цвета" width="130" height="188">
+                      <source type="image/webp" srcset="img/catalog/coffee-can-2.webp 1x, img/catalog/coffee-can-2@2x.webp 2x">
+                      <img class="products__image" src="img/catalog/coffee-can-2.png" srcset="img/catalog/coffee-can-2@2x.png 2x" alt="Банка кофе сиреневого цвета" width="130" height="188">
                     </picture>
                   </a>
 
-                  <a class="products__link-title" href="#">
+                  <a class="products__link-title" href="#!">
                     <h3 class="products__title">Декаф Флэт Уайт</h3>
                   </a>
 
@@ -433,14 +433,14 @@
 
               <li class="products__item">
                 <article class="products__card">
-                  <a class="products__link-image" href="#">
+                  <a class="products__link-image" href="#!">
                     <picture>
-                      <source type="image/webp" srcset="img/coffee-can-3.webp 1x, img/coffee-can-3@2x.webp 2x">
-                      <img class="products__image" src="coffee-can-3.png" srcset="img/coffee-can-3@2x.png 2x" alt="Банка кофе черного цвета" width="130" height="188">
+                      <source type="image/webp" srcset="img/catalog/coffee-can-3.webp 1x, img/catalog/coffee-can-3@2x.webp 2x">
+                      <img class="products__image" src="img/catalog/coffee-can-3.png" srcset="img/catalog/coffee-can-3@2x.png 2x" alt="Банка кофе черного цвета" width="130" height="188">
                     </picture>
                   </a>
 
-                  <a class="products__link-title" href="#">
+                  <a class="products__link-title" href="#!">
                     <h3 class="products__title">Декаф Флэт Уайт</h3>
                   </a>
 
@@ -462,14 +462,14 @@
 
               <li class="products__item">
                 <article class="products__card">
-                  <a class="products__link-image" href="#">
+                  <a class="products__link-image" href="#!">
                     <picture>
-                      <source type="image/webp" srcset="img/coffee-can-4.webp 1x, img/coffee-can-4@2x.webp 2x">
-                      <img class="products__image" src="coffee-can-4.png" srcset="img/coffee-can-4@2x.png 2x" alt="Банка кофе розового цвета" width="130" height="188">
+                      <source type="image/webp" srcset="img/catalog/coffee-can-4.webp 1x, img/catalog/coffee-can-4@2x.webp 2x">
+                      <img class="products__image" src="img/catalog/coffee-can-4.png" srcset="img/catalog/coffee-can-4@2x.png 2x" alt="Банка кофе розового цвета" width="130" height="188">
                     </picture>
                   </a>
 
-                  <a class="products__link-title" href="#">
+                  <a class="products__link-title" href="#!">
                     <h3 class="products__title">Декаф Флэт Уайт</h3>
                   </a>
 
@@ -491,14 +491,14 @@
 
               <li class="products__item">
                 <article class="products__card">
-                  <a class="products__link-image" href="#">
+                  <a class="products__link-image" href="#!">
                     <picture>
-                      <source type="image/webp" srcset="img/coffee-can-5.webp 1x, img/coffee-can-5@2x.webp 2x">
-                      <img class="products__image" src="coffee-can-5.png" srcset="img/coffee-can-5@2x.png 2x" alt="Банка кофе коричневого цвета" width="130" height="188">
+                      <source type="image/webp" srcset="img/catalog/coffee-can-5.webp 1x, img/catalog/coffee-can-5@2x.webp 2x">
+                      <img class="products__image" src="img/catalog/coffee-can-5.png" srcset="img/catalog/coffee-can-5@2x.png 2x" alt="Банка кофе коричневого цвета" width="130" height="188">
                     </picture>
                   </a>
 
-                  <a class="products__link-title" href="#">
+                  <a class="products__link-title" href="#!">
                     <h3 class="products__title">Декаф Флэт Уайт</h3>
                   </a>
 
@@ -520,14 +520,14 @@
 
               <li class="products__item">
                 <article class="products__card">
-                  <a class="products__link-image" href="#">
+                  <a class="products__link-image" href="#!">
                     <picture>
-                      <source type="image/webp" srcset="img/coffee-can-6.webp 1x, img/coffee-can-6@2x.webp 2x">
-                      <img class="products__image" src="coffee-can-6.png" srcset="img/coffee-can-6@2x.png 2x" alt="Банка кофе жклтого цвета" width="130" height="188">
+                      <source type="image/webp" srcset="img/catalog/coffee-can-6.webp 1x, img/catalog/coffee-can-6@2x.webp 2x">
+                      <img class="products__image" src="img/catalog/coffee-can-6.png" srcset="img/catalog/coffee-can-6@2x.png 2x" alt="Банка кофе жклтого цвета" width="130" height="188">
                     </picture>
                   </a>
 
-                  <a class="products__link-title" href="#">
+                  <a class="products__link-title" href="#!">
                     <h3 class="products__title">Декаф Флэт Уайт</h3>
                   </a>
 
@@ -551,7 +551,7 @@
             <div class="products__pagination pagination">
               <ul class="pagination__list">
                 <li class="pagination__item">
-                  <a class="pagination__link pagination__link--back" href="#">
+                  <a class="pagination__link pagination__link--back" href="#!">
                     <svg class="pagination__icon" width="10" height="10">
                       <use xlink:href="img/sprite.svg#arrow"></use>
                     </svg>
@@ -561,7 +561,7 @@
                 </li>
 
                 <li class="pagination__item">
-                  <a class="pagination__link" href="#">1</a>
+                  <a class="pagination__link" href="#!">1</a>
                 </li>
 
                 <li class="pagination__item">
@@ -569,11 +569,11 @@
                 </li>
 
                 <li class="pagination__item">
-                  <a class="pagination__link" href="#">3</a>
+                  <a class="pagination__link" href="#!">3</a>
                 </li>
 
                 <li class="pagination__item">
-                  <a class="pagination__link pagination__link--forward" href="#">
+                  <a class="pagination__link pagination__link--forward" href="#!">
                     <svg class="pagination__icon pagination__icon--forward" width="10" height="10">
                       <use xlink:href="img/sprite.svg#arrow"></use>
                     </svg>
@@ -586,12 +586,161 @@
           </div>
         </div>
       </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+
+        <div class="map__interactive" id="map">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map/map-desktop.webp 1x, img/map/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map/map-tablet.webp 1x, img/map/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map/map-mobile.webp 1x, img/map/map-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/map/map-desktop.png.png 1x, img/map/map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/map/map-tablet.png 1x, img/map/map-tablet@2x 2x">
+            <img class="map__image map__image--nojs" src="img/map/map-mobile.png" srcset="img/map/map-mobile.png@2x.png 2x"
+              alt="Офис компании по адресу Санкт-Петербург, набережная реки Карповки, дом 5"  width="320" height="420">
+          </picture>
+        </div>
+      </section>
     </main>
 
-    <footer class="page-footer"></footer>
+    <footer class="page-footer">
+      <section class="footer-header">
+        <h2 class="visually-hidden">Наши социальные сети</h2>
+
+        <a class="footer-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo/logo-desktop.svg">
+            <img class="footer-header__logo-image" src="img/logo/logo-tablet.svg" width="82" height="36" alt="Логотип «Drink2GO»">
+          </picture>
+        </a>
+
+        <span class="footer-header__text">Интернет-магазин кофейных напитков</span>
+
+        <ul class="footer-header__social social">
+          <li class="social__item">
+            <a class="social__link" href="#!">
+              <span class="visually-hidden">ВКонтакте</span>
+
+              <svg class="social__link-icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="#!">
+              <span class="visually-hidden">Pinterest</span>
+
+              <svg class="social__link-icon" width="22" height="22">
+                <use xlink:href="img/sprite.svg#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="#!">
+              <span class="visually-hidden">Одноклассники</span>
+
+              <svg class="social__link-icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#ok"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <nav class="footer-nav">
+        <h4 class="footer-nav__heading">Интернет-магазин</h4>
+
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#!">
+              Каталог
+            </a>
+          </li>
+
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#!">
+              Доставка
+            </a>
+          </li>
+
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#!">
+              Способы оплаты
+            </a>
+          </li>
+
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#!">
+              О нас
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="footer-media">
+        <h4 class="footer-media__heading">Медиа</h4>
+
+        <ul class="footer-media__list">
+          <li class="footer-media__item">
+            <a class="footer-media__link" href="#!">
+              Блог
+            </a>
+          </li>
+
+          <li class="footer-media__item">
+            <a class="footer-media__link" href="#!">
+              Информация для СМИ
+            </a>
+          </li>
+
+          <li class="footer-media__item">
+            <a class="footer-media__link">
+              Правовая информация
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer-contacts">
+        <h4 class="footer-contacts__heading">Контакты</h4>
+
+        <ul class="footer-contacts__list">
+          <li class="footer-contacts__item">
+            <svg class="footer-contacts__icon" width="13" height="16">
+              <use xlink:href="img/sprite.svg#location"></use>
+            </svg>
+
+            <span class="footer-contacts__text">Санкт-Петербург, набережная реки Карповки, дом 5</span>
+          </li>
+
+          <li class="footer-contacts__item">
+            <svg class="footer-contacts__icon" width="13" height="16">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+
+            <span class="footer-contacts__text">+7 (999) 999-99-99</span>
+          </li>
+        </ul>
+      </section>
+
+      <p class="footer-copyright">
+        <span>Разработано в</span>
+
+        <a class="footer-copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+
+          <svg class="footer-copyright__icon" width="12" height="16">
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>
