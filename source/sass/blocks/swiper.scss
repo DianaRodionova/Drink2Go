@@ -5,7 +5,7 @@
     background-color: $merino;
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient(to bottom, $merino 73%, $white 27%);
+      background-image: linear-gradient(to bottom, $merino 640px, $white 188px);
     }
 
     @media (min-width: $desktop-width) {
@@ -17,7 +17,7 @@
     background-color: $selago;
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient(to bottom, $selago 73%, $white 27%);
+      background-image: linear-gradient(to bottom, $selago 640px, $white 188px);
     }
 
     @media (min-width: $desktop-width) {
@@ -29,7 +29,7 @@
     background-color: $iron;
 
     @media (min-width: $tablet-width) {
-      background-image: linear-gradient(to bottom, $iron 73%, $white 27%);
+      background-image: linear-gradient(to bottom, $iron 640px, $white 188px);
     }
 
     @media (min-width: $desktop-width) {
@@ -56,7 +56,8 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    height: 73%;
+    width: 80px;
+    height: 640px;
     background-position: center;
   }
 
@@ -114,7 +115,7 @@
 }
 
 .swiper-horizontal > .swiper-pagination-bullets {
-  bottom: 60px;
+  bottom: 61px;
 }
 
 .swiper-pagination {

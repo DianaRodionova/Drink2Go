@@ -11,7 +11,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
+    align-items: flex-start;
 
     width: $desktop-width;
     padding: 30px 80px 84px 105px;
@@ -48,6 +48,7 @@
     @media (min-width: $tablet-width) {
       order: -1;
 
+      max-width: 725px;
       margin-bottom: 20px;
     }
 
@@ -56,6 +57,7 @@
       order: 1;
       align-items: flex-start;
 
+      padding-top: 150px;
       margin-bottom: 0;
 
       text-align: left;
@@ -120,10 +122,9 @@
   &__button {
     @include text-medium;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
 
+    max-width: 130px;
     padding: 8px 20px;
 
     cursor: pointer;

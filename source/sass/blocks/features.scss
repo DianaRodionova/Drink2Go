@@ -8,7 +8,7 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 20px 100px;
+    padding: 60px 30px 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,10 +49,14 @@
       grid-template-columns: repeat(2, 1fr);
       column-gap: 30px;
       row-gap: 50px;
+
+      max-width: $tablet-width;
     }
 
     @media (min-width: $desktop-width) {
       grid-template-columns: repeat(4, 1fr);
+
+      max-width: $desktop-width;
     }
   }
 
@@ -102,6 +106,16 @@
     @media (min-width: $desktop-width) {
       margin-right: 0;
       margin-bottom: 20px;
+    }
+
+    &--indent {
+      @media (min-width: $tablet-width) {
+        margin-top: 4px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-top: 0;
+      }
     }
   }
 

@@ -2,14 +2,20 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 40px;
 
     width: auto;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0;
+
     width: 318px;
     margin-top: 4px;
   }
@@ -17,8 +23,16 @@
   &__fieldset {
     margin-bottom: 30px;
 
+    &--milk {
+      margin-bottom: 34px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 0;
+      }
+    }
+
     @media (min-width: $tablet-width) {
-      margin-bottom: 40px;
+      margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -43,7 +57,7 @@
     }
 
     &--checkbox {
-      padding-left: 54px;
+      padding-left: 52px;
     }
   }
 
@@ -80,7 +94,7 @@
     &--checkbox::before {
       content: "";
       position: absolute;
-      left: -54px;
+      left: -52px;
       top: 0;
 
       width: 42px;
@@ -95,7 +109,7 @@
       content: "";
       position: absolute;
       top: 2px;
-      left: -52px;
+      left: -50px;
 
       width: 20px;
       height: 20px;
@@ -151,7 +165,7 @@
   }
 
   &__checkbox:checked + &__label--checkbox::after {
-    left: -34px;
+    left: -32px;
   }
 
   &__checkbox:disabled + &__label--checkbox,
@@ -181,7 +195,7 @@
     flex-direction: column;
 
     @media (min-width: $tablet-width) {
-      flex-grow: 1;
+      grid-column: 1/ -1;
       flex-direction: row;
       justify-content: center;
 

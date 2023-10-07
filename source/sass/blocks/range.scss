@@ -14,10 +14,15 @@
 
     height: 24px;
     padding-top: 10px;
-    margin-bottom: 35px;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 22px;
     }
   }
 
@@ -36,12 +41,20 @@
     &:disabled {
       background-color: $silver;
     }
+
+    @media (min-width: $tablet-width) {
+      width: 192px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 274px;
+    }
   }
 
   &__toggle {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 2px;
+    left: 2px;
 
     width: 20px;
     height: 20px;
@@ -70,19 +83,19 @@
       background-color: $silver;
     }
 
-    &--min {
-      left: 0;
+    @media (min-width: $tablet-width) {
+      top: 2px;
     }
 
     &--max {
-      left: 241px;
+      left: 238px;
 
       @media (min-width: $tablet-width) {
-        left: 192px;
+        left: 181px;
       }
 
       @media (min-width: $desktop-width) {
-        left: 274px;
+        left: 276px;
       }
     }
   }
@@ -106,6 +119,11 @@
       color: $mine-shaft;
       border: 2px solid $portage;
       border-radius: $border-radius;
+
+      &::placeholder {
+        text-align: center;
+        margin: 0 auto;
+      }
 
       @media (min-width: $tablet-width) {
         width: 87px;

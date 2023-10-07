@@ -4,6 +4,12 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-grow: 1;
+
+    margin-left: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 
   &__item {

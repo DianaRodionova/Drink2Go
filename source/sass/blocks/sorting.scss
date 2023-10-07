@@ -12,6 +12,10 @@
     font-weight: $font-weight-semibold;
 
     margin-right: 8px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 10px;
+    }
   }
 
   &__select {

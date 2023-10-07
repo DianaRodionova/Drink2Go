@@ -12,10 +12,14 @@
     border-bottom: none;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+  }
+
   &__heading {
     @include h4;
 
-    margin-bottom: 12px;
+    margin-bottom: 20px;
   }
 
   &__list {

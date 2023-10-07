@@ -1,7 +1,6 @@
 .products {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
@@ -66,7 +65,7 @@
 
   &__image {
     width: 130px;
-    height: 180px;
+    height: 188px;
   }
 
   &__link-title {
@@ -101,6 +100,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    width: 100%;
   }
 
   &__price {
@@ -110,6 +111,10 @@
   }
 
   &__button {
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 20px;
+
     display: flex;
     align-items: center;
 
@@ -133,6 +138,10 @@
     }
 
     &-icon {
+      flex-shrink: 0;
+
+      width: 20px;
+      height: 16px;
       margin-right: 6px;
 
       color: $white;

@@ -12,6 +12,10 @@
     border-bottom: none;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 9px;
+  }
+
   &__heading {
     @include h4;
 
@@ -39,6 +43,7 @@
 
     padding: 8px 0;
 
+    letter-spacing: 0.02em;
     text-transform: uppercase;
 
     color: $mine-shaft;
