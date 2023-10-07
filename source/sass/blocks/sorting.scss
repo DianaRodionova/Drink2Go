@@ -41,6 +41,7 @@
 
       .sorting__label + .sorting__input + .sorting__label {
         max-height: 40px;
+
         border-top-width: 1px;
       }
     }
@@ -131,6 +132,16 @@
 
     & + input + & {
       border-top: 0 solid $blue-chalk;
+    }
+
+    &--first {
+      border-top-right-radius: $border-radius;
+      border-top-left-radius: $border-radius;
+    }
+
+    &--last {
+      border-bottom-right-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
     }
 
     &:hover {
