@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Drink2GO - интернет-магазин кофейных напитков</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
@@ -270,11 +271,15 @@
                   </div>
 
                   <div class="range__price">
-                    <input class="range__price-control" type="number" name="min-price" placeholder="0">
+                    <label class="visually-hidden" for="min-price">от</label>
+
+                    <input class="range__price-control" type="number" name="min-price" id="min-price" placeholder="0">
 
                     <span class ="range__divider"></span>
 
-                    <input class="range__price-control" type="number" name="max-price" placeholder="1000" value="900">
+                    <label class="visually-hidden" for="max-price">до</label>
+
+                    <input class="range__price-control" type="number" name="max-price" id="max-price" placeholder="1000" value="900">
                   </div>
                 </div>
               </fieldset>
