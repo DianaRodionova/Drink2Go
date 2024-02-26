@@ -1,5 +1,7 @@
 # Личный проект «Drink2Go» 
 
+Макет - https://www.figma.com/file/iw6PW2uoe2arzeQvbAV2Fh/Drink2Go-(Copy)?type=design&node-id=86-11851&mode=design&t=oAl9meVL8ohA5x6f-0
+
 Общее время работы: 42 часа.
 
 <h2>Особенности реализации</h2>
